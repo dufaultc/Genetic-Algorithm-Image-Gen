@@ -9,7 +9,7 @@ PPM_IMAGE *read_ppm (const char *file_name){
 
 	err = fscanf(fp, "P3\n%d %d\n%d\n", &width, &height, &max_colour);
 	if (err < 3){
-		printf("Error: Is this possibly not a properly formatte PPM image?");
+		printf("Error: Is this possibly not a properly formatted PPM image?");
 		exit(1);
 	}
 	PIXEL *data = malloc(sizeof(PIXEL)*width*height);

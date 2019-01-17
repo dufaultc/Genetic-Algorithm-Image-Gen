@@ -9,6 +9,9 @@ double comp_distance(const PIXEL *A, const PIXEL *B, int image_size)
 	int i;
 	int rem = image_size&0x7;
 
+	// Loop unraveling and invariance operations performed in order to optimize program. Calculations performed multiple times
+	// are performed one and then their results are stored, whenever possible
+	
 	PIXEL AE1;
 
 		PIXEL BEE1;

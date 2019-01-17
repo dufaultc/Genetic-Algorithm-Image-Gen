@@ -22,6 +22,3 @@ void mutate_population (Individual *individual, int population_size , double rat
 		mutate(individual+i, rate);
 	}
 }
-
-
-//M + rand() / (RAND_MAX / (N - M + 1) + 1)
